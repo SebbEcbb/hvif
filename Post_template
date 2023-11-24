@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XZ35BGV7MD');
+    </script>
+
+    <meta http-equiv="Content-Type" content="texy/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Post Title</title>
+    
+    <link rel="icon" href="site-icon2.jpg">
+    <link rel="stylesheet" href="main.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+    <div>
+        <h1 id="site-title" itemprop="headline">
+                    <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas in France</a></strong>
+        </h1>
+  
+    </div>
+</header>
+
+<div id="page-hero">
+    <h1><a href="#main-title">Post title </a></h1>
+</div>  
+<div id="main-menu">
+    <div id="top"><a href="#main-title">top</a></div>
+    <ul>
+        <li class="menuitem"> <a href="">Articles</a> </li>
+        <li class="menuitem"> <a href="villas.html" target="_blank">Villas</a> </li>                 
+        <li class="menuitem"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
+    </ul>
+</div> 
+
+<div class="space50"></div> 
+
+<div class="page-grid-container">
+    
+    <div class="side-bar-left"></div>
+
+    <div class="main">
+        <div class="space50"></div>
+        <div id="main-title" class="space50"></div>
+        <h1>Art of Living in France</h1>
+        <div class="space50"></div> 
+        <div class="index">
+            <h3 id="toc">Content</h3>
+            <ul>
+                <li class="index-item"><a href="#par1">Subheader 1</a></li>
+                <li class="index-item"><a href="#par2">Subheader 2</a></li>
+                <li class="index-item"><a href="#par3">Subheader 3</a></li>
+                <li class="index-item"><a href="#par4">Subheader 4</a></li>
+                <li class="index-item"><a href="#par5">Subheader 5</a></li>
+                <li class="index-item"><a href="#par6">Subheader 6</a></li>
+                <li class="index-item"><a href="#par7">Subheader 7</a></li>
+                <li class="index-item"><a href="#par8">Subheader 8</a></li>
+            </ul>
+        </div>
+
+        <div id="par1" class="space100"></div>
+        <div >
+            <div class="media-right">
+                <div class="pad-right">   
+                    <h2 >Subheader 1</h2>
+                    <p>text</p>   
+                    <br>
+                    
+                </div>
+                <div><img src="Home/Provence.jpg" alt="La Provence" width="100%"></div>
+            </div>
+            <p>
+                <br>
+                text
+            </p>   
+        </div>
+
+        <div id="par2" class="space100"></div>
+
+        <div>
+            <h2 >Subheader 2</h2>
+            <p>
+                text
+            </p>
+               
+            <img src="Home/Lac-1-1536x470.jpg" alt="Lac", width="100%"> 
+
+            <br><br>
+        </div>  
+
+        <div id="par3" class="space100"></div>
+
+        <div>
+            <h3 >Subheader 3</h3>
+            <p>
+                text
+            </p>
+            <br>
+        </div>
+
+        <div class="col3 img3">
+            <img style="width:100%" src="Home/Artisans (1).jpg" alt="A peaceful life" height="auto">
+            <img style="width:100%" src="Home/MontMartre (1).jpg" alt="A peaceful life" height="auto"> 
+            <img style="width:100%" src="Home/Accordéoniste.jpg" alt="A peaceful life" height="auto">
+        
+        </div>
+
+        <div id="par4" class="space50"></div>
+        <div>
+            <br>
+            <h3>Subheader 4</h3>
+            <p>text
+            </p>
+        </div>
+
+        <div id="par5" class="space100" ></div>
+
+            <div><h2>Subheader 5</h2></div>
+            <br>
+
+            <div><img src="Home/France-Paris-Versailles-10-1024x539.jpg" alt="Paris Versailles" width="100%""></div>
+              
+            <div>
+                <div class="space50"></div>
+                <p>
+                    text.</p>
+                
+            </div>
+            
+            <div id="par6" class="space100"></div>
+
+                        
+            <div class="col2">
+                <div><img src="Home/Tour-Eiffel.jpg" alt="Paris Tour Eiffel" height="75%""></div>
+                <div>
+                    <h3 style="margin-bottom: 15px";>Subheader 6</h3>
+                    <br>
+                    <p> Text
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                
+            </div>
+        <div id="par7" class="space100"></div>
+
+        <div>
+            <h2>Subheader 7</h2>
+            <div class="space20"></div>
+            <div class="col2 img2">
+                <img style="width: 95%" src="./Home/cote-dazur-canest.jpg", alt="Houses in the Riviera.">
+                <img style="width: 95%" src="./Home/Ariege2.jpg" alt="Houses in Ariege.">
+            </div>
+            <p>text
+            </p>
+            <br><br>
+            
+        </div>
+
+        <div id="par8" class="space50"></div>
+        <div>
+            <h2>Subheader 8</h2>
+            <br>
+            <p>
+                Text
+            </p>
+            <br><br>
+
+            <div class="col2 img2">
+                <img style="width: 95%" src="./Home/Globalization1.jpg" alt="McDonalds in Asia" height="350px">
+                <img style="width: 95%" src="./Home/Globalization2.jpg" alt="Asie in France" height="350px">
+            </div>
+
+            <p>
+                text
+            </p>
+            <br><br>
+
+            <br><br>
+
+            <br><br>
+            <p>
+                I'm talking about authentic and honest France: the modest, social, 
+                creative and helpful civilisation, with lots of precious treasures to share. 
+                A people that takes things to heart and cares for others, 
+                one that appreciates life, cultures and history. May that France live!
+            </p>
+            <div class="space100"></div>
+            <h3 style="text-align: center;">
+
+                This website is being transferred. <br> Pages and links are not yet all verified.
+                
+                <br>
+                I appologize for the eventual incovenience.
+                <br><br>
+                <a id="contact-link" href="https://www.facebook.com/HolidayVillasInFrance/">You can contact me here.</a>   
+                <br><br>
+            </h3>
+              
+        </div>
+        
+    </div>
+
+
+    <div class="side-bar">  
+
+
+     
+    </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 950) {
+    document.getElementById("main-menu").className = "sticky";
+    document.getElementById("top").className = "sticky";
+  } else {
+    document.getElementById("main-menu").className = "main-menu ";
+    document.getElementById("top").className = "main-menu ";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -169,19 +169,7 @@ header{
   }
   
 
-#page-hero {
-    background-image: url("Home/Place_de_la_bourse.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-    padding-left: 20%;
-    padding-top: 6%;
-    font-family: "Ubuntu", sans-serif;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    
-}
+
 
 #page-hero h1 a {
     font-size: 50px;
