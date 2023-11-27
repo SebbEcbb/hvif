@@ -1,0 +1,13 @@
+#page-hero {
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 6%;
+    font-family: "Ubuntu", sans-serif;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    
+}

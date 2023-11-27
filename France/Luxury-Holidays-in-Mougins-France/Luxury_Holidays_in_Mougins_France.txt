@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XZ35BGV7MD');
+    </script>
+
+    <meta http-equiv="Content-Type" content="texy/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Luxury Holidays in Mougins, France</title>
+    
+    <link rel="icon" href="../site-icon2.jpg">
+    <link rel="stylesheet" href="../main.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    
+<header>
+        <div>
+            <h1 id="site-title" itemprop="headline">
+                        <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas in France</a></strong>
+            </h1>
+      
+        </div>
+</header>
+
+<div id="page-hero">
+    <h1><a href="#main-title">Luxury Holidays in Mougins, France</a></h1>
+</div>  
+<div id="main-menu">
+    <div id="top"><a href="#main-title">top</a></div>
+    <ul>
+        <li class="menuitem"> <a href="">Articles</a> </li>
+        <li class="menuitem"> <a href="villas.html" target="_blank">Villas</a> </li>                 
+        <li class="menuitem"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
+    </ul>
+</div> 
+    
+<p>&nbsp;</p>
+
+<h1>Exquisite Escapes: Luxury Holidays in Mougins, France</h1>
+
+<h3>Introduction:</h3>
+
+
+
+<h2>Idyllic Setting:</h2>
+
+<p></p>
+
+
+<h2>Artistic Heritage:</h2>
+
+<p></p>
+
+
+<h2>Michelin-Starred Gastronomy:</h2>
+
+<p></p>
+
+
+<h2>Exclusive Accommodations:</h2>
+
+<p></p>
+
+<h2>Wellness and Relaxation:</h2>
+
+<p></p>
+
+<h2>Outdoor Pursuits:</h2>
+
+<p></p>
+
+<h2>Conclusion:</h2>
+
+<p></p>
+
+
+
+    
+</body>
+</html>
