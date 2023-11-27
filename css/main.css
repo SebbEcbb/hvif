@@ -99,7 +99,7 @@ header{
 }
 
 
-#main-menu-left a:hover {
+#main-menu a:hover {
   padding: 10px;
   color: rgb(50, 1,100);
   border: solid 1px black;
@@ -110,14 +110,12 @@ header{
 #main-menu-left {
     float:left !important;
 }
-
-
-
-#main-menu ul {
-    margin-top: 10px;
+#main-menu-right {
+  float:right !important;
 }
 
-#main-menu:hover{
+
+#main-menu ul li:hover{
     opacity: 1;
 }
 
@@ -132,21 +130,28 @@ header{
 }
 
 .show{
-  display: :block;
+  display:block;
 }
-.Sticky-menu ul{
+.sticky-menu{
   position: fixed;
   top: 0;
   width: 100%;   
   opacity: 0.8;
   }
 
-.Sticky-menu ul li{ 
+.sticky-menu ul li{ 
   list-style-type:none;
   text-align: left;
   padding-top: 10px;
   padding-left: 25px;
   font-size: 20px;
+}
+
+.sticky-menu ul li a {
+  padding-right: 10px !important;
+  margin-right: 5px !important;
+  font-size: 18px;    
+  color:black;
 }
 
 .menuitem a {
@@ -170,20 +175,6 @@ header{
     font-size:30px;      
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;   
-    opacity: 0.5; 
-}
-
-
-.sticky ul li a {
-    padding-right: 10px !important;
-    margin-right: 5px !important;
-    font-size: 18px;    
-  }
-  
 
 
   .space20{
@@ -258,7 +249,7 @@ header{
   border:3px;
   border-color: black;
   border-radius: 15px;
-  background-color: rgb(222, 222, 222);
+  background-color: rgba(222, 222, 222, 0.50);
   }
 
   .col3{

@@ -60,7 +60,12 @@
 
 <div class="page-grid-container">
     
-    <div class="side-bar-left"></div>
+    <div class="side-bar-left">
+        <ul id="sticky-menu-left" class="sticky-menu hide">
+            <li class="menuitem"><a href="#site-title">Top</a></li>
+            <li class="menuitem"><a href="#content">Content</a></li>
+        </ul>
+    </div>  
 
     <div class="main">
         <div class="space50"></div>
@@ -369,7 +374,7 @@
 
 
     <div class="side-bar-right">
-        <div id="menu-right" class="Sticky-menu hide">
+        <div id="sticky-menu-right" class="sticky-menu hide">
             <ul>
                 <li><a href="./France/index.html"></a>France</li>
                 <li><a href="./Villas/index.html"></a>Villas</li> 
@@ -384,19 +389,18 @@
 </div>
 
 <script>
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {sticky_js()};
 
-function myFunction() {
-  if (document.documentElement.scrollTop > 950) {
-    document.getElementById("main-menu").className = "hide";
-    document.getElementById("top").className = "hide";
-    document.getElementById("menu-right").className="Sticky-menu"
-  } else {
-    document.getElementById("main-menu").className = "main-menu ";
-    document.getElementById("top").className = "main-menu ";
-    document.getElementById("Menu-right").className="hide"
+function sticky_js() {
+  if (document.documentElement.scrollTop > 950) 
+    document.getElementsById("sticky-menu-left").className="sticky-menu show"
+    document.getElementsById("sticky-menu-right").className="sticky-menu show"
+  } 
+  else {
+    document.getElementsById("sticky-menu-left").className="sticky-menu hide"
+    document.getElementsById("sticky-menu-right").className="sticky-menu hide"
   }
-}
+
 </script>
 
 </body>
