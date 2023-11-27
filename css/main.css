@@ -263,18 +263,13 @@ header{
 
   .col3{
     display: grid;
-    grid-template-columns: 30% 35% 35%;
+    grid-template-columns: 50% 50%;
     margin-top: 50px;
     overflow: hidden;
     gap: 15px;
   }
 
-  .img3 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 380px;    
-  }
+
 
   .col2{
     display: grid;
@@ -283,13 +278,7 @@ header{
     gap: 15px;
   }
 
-  .img2 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 380px;    
-    margin-bottom: 50px;
-  }
+
 
   .col2 h3, p {
     padding-left: 0;
