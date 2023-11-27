@@ -43,9 +43,14 @@
     <h1><a href="#main-title">Luxury  Holiday & <br> Art of Living in France</a></h1>
 </div>  
 <div id="main-menu">
-    <div id="top"><a href="#main-title">top</a></div>
-    <ul>
-        <li class="menuitem"> <a href="">France</a> </li>
+    
+    <ul id="main-menu-left">
+        <li class="menuitem"><a href="#site-title">Top</a></li>
+        <li class="menuitem"><a href="#content">Content</a></li>
+    </ul>
+
+    <ul id="main-menu-right">
+        <li class="menuitem"> <a href="./France/index.html">France</a> </li>
         <li class="menuitem"> <a href="villas.html" target="_blank">Villas</a> </li>                 
         <li class="menuitem"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
     </ul>
@@ -360,7 +365,15 @@
     </div>
 
 
-    <div class="side-bar">  
+    <div class="side-bar-right">
+        <div id="menu-right" class="Sticky-menu hide">
+            <ul>
+                <li><a href="./France/index.html"></a>France</li>
+                <li><a href="./Villas/index.html"></a>Villas</li> 
+                <li>Contact</li>
+
+            </ul>
+        </div>  
 
 
      
@@ -372,11 +385,13 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (document.documentElement.scrollTop > 950) {
-    document.getElementById("main-menu").className = "sticky";
-    document.getElementById("top").className = "sticky";
+    document.getElementById("main-menu").className = "hide";
+    document.getElementById("top").className = "hide";
+    document.getElementById("menu-right").className="Sticky-menu"
   } else {
     document.getElementById("main-menu").className = "main-menu ";
     document.getElementById("top").className = "main-menu ";
+    document.getElementById("Menu-right").className="hide"
   }
 }
 </script>
