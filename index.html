@@ -40,7 +40,7 @@
 </header>
 
 <div id="page-hero">
-    <h1><a href="#main-title">Luxury  Holiday & <br> Art of Living in France</a></h1>
+    <h1><a href="#main-title">Luxury  Holidays & <br> Art of Living in France</a></h1>
 </div>  
 <div id="main-menu">
     
@@ -62,7 +62,7 @@
     
     <div class="side-bar-left">
         <ul id="sticky-menu-left" class="sticky-menu hide">
-            <li class="menuitem"><a href="#site-title">Top</a></li>
+            <li><a href="#site-title">Top</a></li>
             <li class="menuitem"><a href="#content">Content</a></li>
         </ul>
     </div>  
@@ -376,29 +376,25 @@
     <div class="side-bar-right">
         <div id="sticky-menu-right" class="sticky-menu hide">
             <ul>
-                <li><a href="./France/index.html"></a>France</li>
-                <li><a href="./Villas/index.html"></a>Villas</li> 
-                <li>Contact</li>
-
+                <li class="menuitem"><a href="./France/index.html">France</a></li>
+                <li class="menuitem"><a href="./Villas/index.html">Villas</a></li> 
+                <li class="menuitem"><a href="https://www.facebook.com/HolidayVillasInFrance/">Contact</a></li>
             </ul>
-        </div>  
-
-
-     
+        </div>       
     </div>
 </div>
 
-<script>
+<script id="Function_sticky-menu">
 window.onscroll = function() {sticky_js()};
 
 function sticky_js() {
-  if (document.documentElement.scrollTop > 950) {
-    document.getElementsById("sticky-menu-left").className="sticky-menu show"
-    document.getElementsById("sticky-menu-right").className="sticky-menu show"
+  if (document.documentElement.scrollTop > 650) {
+    document.getElementById("sticky-menu-left").className="sticky-menu show"
+    document.getElementById("sticky-menu-right").className="sticky-menu show"
   } 
   else {
-    document.getElementsById("sticky-menu-left").className="sticky-menu hide"
-    document.getElementsById("sticky-menu-right").className="sticky-menu hide"
+    document.getElementById("sticky-menu-left").className="sticky-menu hide"
+    document.getElementById("sticky-menu-right").className="sticky-menu hide"
   }
 }
 </script>
