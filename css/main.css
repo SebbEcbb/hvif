@@ -89,7 +89,7 @@ header{
   text-decoration: none;
   font-weight: 700;
   width: auto;
-  height: auto;*
+  height: auto;
 }
 
 #main-menu a{
@@ -249,7 +249,6 @@ header{
   border:3px;
   border-color: black;
   border-radius: 15px;
-  background-color: rgba(222, 222, 222, 0.50);
   }
 
   .col3{
@@ -313,5 +312,3 @@ header{
 form{
   width:100%;
 }
-  
-
