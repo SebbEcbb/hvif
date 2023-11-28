@@ -31,6 +31,7 @@ p{
     font-size: 24px;
     font-family: "Poppins", sans-serif;
     color: rgb(50,1, 100);
+    padding-right: 5px;
 }
 
 img {
@@ -200,8 +201,7 @@ header{
 
 .page-grid-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
-    padding: 10px;
+    grid-template-columns: 10% 80% 10%;
   }
 
 
@@ -211,6 +211,7 @@ header{
 
   .main{
     text-align: justify;
+    padding-right: 10px;
   }
   .main h1{
     text-align: left;
@@ -252,11 +253,16 @@ header{
     gap: 15px;
   }
 
-
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
   .col2{
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 48% 50% ;
     overflow: hidden;
     gap: 15px;
   }
