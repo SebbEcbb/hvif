@@ -6,27 +6,29 @@
 }
 
 h1{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 46px;
+    font-family: "Poppins", sans-serif;
+    color:rgb(10, 10, 50);
+    font-size: 40px;
     font-weight: bold;
 }
 
 h2{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
+    color:rgb(40, 1, 83);
     font-size: 36px;
     font-weight: bold;
     padding-bottom: 30px;
 }
 
 h3{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 32px;
     font-weight: 400;  
     margin-bottom: 15px;
 }
 
 p{
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
     color: rgb(50,1, 100);
 }
@@ -45,30 +47,30 @@ header{
   
 
 #site-title{   
-    margin-left: 50px;
+    margin-left: 20px;
     display: inline;   
-    font-weight: bold;
+    font-weight: bold;    
     text-shadow: 3px 3px 5px rgb(107, 100, 126); 
 }
 
 #site-title a {
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;  
+    color:rgb(10,10,50) !important;
     margin-block-end: 5px;
     text-decoration: none;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 1.5s;
 }
 
 #site-title a:hover{
     padding: 5px;
     padding-right: 20px !important;
     margin-right: 20px !important;
-    font-size: 110%;
+    font-size: 40px;
     font-weight: bolder;   
-    opacity: 0.7;
 }
 
 
@@ -76,33 +78,28 @@ header{
   text-decoration: underline;
 }
 
-#top {
-    float:left;
-    margin-top:10px;
-    margin: left 20px;
-    padding: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 700;
-    border: solid 1px;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    opacity: 0.6;
+#main-menu{
+  padding: 5px;
+  text-align:right;
+  background-color: white;
+  height: 40px;
+  margin-top:10px;
+  margin-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  width: auto;
+  height: auto;*
 }
 
-#top a{
+#main-menu a{
   text-decoration: none;
   transition-property: all;
-  transition-duration: 0.5s;
-}
-#top:hover{
-  border:none;
+  transition-duration: 1.5s;
 }
 
 
-
-#top a:hover {
+#main-menu a:hover {
   padding: 10px;
   color: rgb(50, 1,100);
   border: solid 1px black;
@@ -110,18 +107,15 @@ header{
   font-size: 28px;   
 }
 
-#main-menu{
-    padding: 5px;
-    text-align:right;
-    background-color: white;
-    height: 40px;
+#main-menu-left {
+    float:left !important;
+}
+#main-menu-right {
+  float:right !important;
 }
 
-#main-menu ul {
-    margin-top: 10px;
-}
 
-#main-menu:hover{
+#main-menu ul li:hover{
     opacity: 1;
 }
 
@@ -131,78 +125,57 @@ header{
     width: 40px;
 }
 
+.hide{
+  display:none;
+}
+
+.show{
+  display:block;
+}
+.sticky-menu{
+  position: fixed;
+  top: 0;
+  width: 100%;   
+  opacity: 0.8;
+  }
+
+.sticky-menu ul li{ 
+  list-style-type:none;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.sticky-menu ul li a {
+  padding-right: 10px !important;
+  margin-right: 5px !important;
+  font-size: 18px;    
+  color:black;
+}
 
 .menuitem a {
     width: auto;
     height: auto;
     margin-right: 40px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 28px;
     font-weight: bolder;
     text-decoration: none;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 .menuitem a:hover {
     padding: 10px;
-    background-color: rgb(228, 207, 247);
-    color:rgb(45, 3, 93);
-    border: solid 1px black;
-    border-radius: 5px;
+    background-color: rgb(140, 140, 140);
+    color:rgb(10,10,50);
+    border: solid 2px black;
+    border-radius: 8px;
     font-size:30px;      
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;   
-    opacity: 0.5; 
-}
 
-
-.sticky ul li a {
-    padding-right: 10px !important;
-    margin-right: 5px !important;
-    font-size: 18px;    
-  }
-  
-
-#page-hero {
-    background-image: url("Home/Place_de_la_bourse.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-    padding-left: 20%;
-    padding-top: 6%;
-    font-family: "Ubuntu", sans-serif;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    
-}
-
-#page-hero h1 a {
-    font-size: 70px;
-    font-weight: 100;
-    color: white !important;
-    text-shadow: 5px 5px 5px rgb(183, 180, 180);
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 0.5s;
-  }
-
-  
-#page-hero h1 a:hover {
-  font-size: 72px;
-
-}
-  #page-hero p {
-    font-size: 40px;
-    padding-left: 350px;
-    color: white !important;
-    text-shadow: 3px 3px 3px rgb(183, 180, 180);
-  }
 
   .space20{
     height: 20px;
@@ -261,34 +234,33 @@ header{
   }
   .index ul li a {    
     font-size: 28px; 
-    color: rgb(73, 3, 138);
+    color: rgb(58, 1, 111);
     text-decoration: none; 
     transition-property: all;
     transition-duration: 0.5s;
   }
 
   .index ul li a:hover {
+  margin: 5px;
+  padding: 10px;
   font-size: 32px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color:rgb(2, 2, 241);
+  color:rgb(6, 6, 6);
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
+  border:3px;
+  border-color: black;
+  border-radius: 15px;
+  background-color: rgba(222, 222, 222, 0.50);
   }
 
   .col3{
     display: grid;
-    grid-template-columns: 25% 35% 40%;
+    grid-template-columns: 50% 50%;
     margin-top: 50px;
     overflow: hidden;
-    gap: 25px;
+    gap: 15px;
   }
 
-  .img3 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 380px;    
-  }
+
 
   .col2{
     display: grid;
@@ -297,13 +269,7 @@ header{
     gap: 15px;
   }
 
-  .img2 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 380px;    
-    margin-bottom: 50px;
-  }
+
 
   .col2 h3, p {
     padding-left: 0;
