@@ -37,6 +37,7 @@ img {
     display: block;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 15px;
   }
 
 header{        
@@ -224,11 +225,11 @@ header{
   }
 
   .index h3 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bolder;
   }
   .index ul li a {    
-    font-size: 28px; 
+    font-size: 20px; 
     color: rgb(58, 1, 111);
     text-decoration: none; 
     transition-property: all;
