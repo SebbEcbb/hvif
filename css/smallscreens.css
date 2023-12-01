@@ -1,0 +1,32 @@
+h1, h1 a{
+    font-size:28px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.sticky-menu{
+    display:none;
+}
+
+
+.space1{
+    height: 10px;
+}
+
+  .space2{
+    height: 25px;
+}
+
+  .space3{
+    height: 50px;
+}
+
+  .space4{
+    height: 100px;
+}

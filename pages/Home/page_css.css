@@ -1,13 +1,5 @@
 #page-hero {
-    /*background-image: url("hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: auto;*/
     padding-top: 3%;
-    /*font-family: "arial", sans-serif;
-    border-top: solid 1px;
-    border-bottom: solid 1px;    */
 }
 
 .responsive{
@@ -17,11 +9,8 @@
 
 #page-title {
   text-align: center;
-  font-size: 40px;
-  font-weight: 100;
-  color: rgb(10,10,50);
   text-shadow: 5px 5px 5px rgb(80,80, 120);
-  }
+}
 
   
 
