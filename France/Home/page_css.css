@@ -1,21 +1,26 @@
 #page-hero {
-    background-image: url("hero.jpg");
+    /*background-image: url("hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    width: 100%;
+    width: auto;*/
     padding-top: 3%;
-    font-family: "Ubuntu", sans-serif;
+    /*font-family: "arial", sans-serif;
     border-top: solid 1px;
-    border-bottom: solid 1px;    
+    border-bottom: solid 1px;    */
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
 }
 
 #page-title {
   text-align: center;
   font-size: 40px;
   font-weight: 100;
-  color: white !important;
-  text-shadow: 5px 5px 5px rgb(183, 180, 180);
+  color: rgb(10,10,50);
+  text-shadow: 5px 5px 5px rgb(80,80, 120);
   }
 
   
