@@ -216,7 +216,7 @@ header{
   }
   .index ul li a {    
     font-size: 30px; 
-    color: rgb(58, 1, 111);
+    color: rgb(44, 1, 83);
     text-decoration: none; 
     transition-property: all;
     transition-duration: 0.5s;
@@ -226,8 +226,8 @@ header{
   margin: 5px;
   padding: 10px;
   font-size: 30px;
-  color:rgb(10, 10, 50);
-  text-shadow: 3px 3px 3px rgb(123, 117, 142);
+  color:rgb(245, 3, 3);
+  text-shadow: 3px 3px 3px rgb(71, 69, 78);
   }
 
   .col3{
