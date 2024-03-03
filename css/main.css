@@ -7,7 +7,7 @@
 
 h1{
     font-family: "Poppins", sans-serif;
-    color:rgb(10, 10, 50);
+    color:rgb(0, 0, 7);
     font-size: 40px;
     font-weight: bold;
 }
@@ -50,28 +50,28 @@ header{
 
 #site-title{   
     margin-left: 20px;
+    padding-top: 20px !important;
     display: inline;   
     font-weight: bold;    
-    text-shadow: 3px 3px 5px rgb(107, 100, 126); 
+    text-shadow: 3px 3px 5px rgb(72, 65, 94); 
 }
 
 #site-title a {
     font-family: "Ubuntu", sans-serif;
     font-size: 35px;
     font-weight: bold;  
-    color:rgb(10,10,50) !important;
+    color:rgb(0, 0, 7);
     margin-block-end: 5px;
     text-decoration: none;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 1.5s;
 }
 
 #site-title a:hover{
     padding: 5px;
     padding-right: 20px !important;
-    margin-right: 20px !important;
-    font-size: 40px;
-    font-weight: bolder;   
+
+    font-size: 38px;  
 }
 
 
@@ -80,27 +80,24 @@ header{
 }
 
 #main-menu a{
+  font-weight: bold;
   text-decoration: none;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 
 #main-menu a:hover {
   margin: 5px;
   padding: 10px;
-  font-size: 30px;
-  color:rgb(10, 10, 50);
-  text-shadow: 3px 3px 3px rgb(123, 117, 142); 
+  font-size: 24px;
+  
 }
 
 #main-menu-left {
     float:left !important;
 }
 
-#main-menu-left li a{
-  margin-right: 10px;
-}
 
 #main-menu-right {
   float:right !important;
@@ -134,41 +131,26 @@ header{
 .sticky-menu ul li{ 
   list-style-type:none;
   text-align: left;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
 }
 
 .sticky-menu ul li a {
   padding-right: 10px !important;
   margin-right: 5px !important;
-  color:rgb(50,1,100);
 }
 
 #sticky-menu-right a {
   text-decoration: none;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 #sticky-menu-left a {
   text-decoration: none;
   transition-property: all;
-  transition-duration: 0.5s;
-}
-
-.menuitem a {
-    text-decoration: none;   
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-
-}
-
-.menuitem a:hover {
-  margin: 5px;
-  padding: 10px;
-  font-size: 28px;
-  color:rgb(10, 10, 50);
-  text-shadow: 3px 3px 3px rgb(123, 117, 142);
+  transition-duration: 1s;
 }
 
   .space1{
@@ -191,7 +173,7 @@ header{
   
 .page-grid-container {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 15% 70% 15%;
   }
 }
 
@@ -203,7 +185,7 @@ header{
   }
 
   .index{
-    background-color: rgb(240, 235, 230);
+    background-color: rgb(235, 219, 246);
     padding: 10px;
   }
   .index ul{
@@ -211,23 +193,23 @@ header{
   }
 
   .index h3 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bolder;
   }
-  .index ul li a {    
-    font-size: 30px; 
+  .links a {    
+    font-size: 20px; 
     color: rgb(44, 1, 83);
     text-decoration: none; 
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 1.5s;
   }
 
-  .index ul li a:hover {
+  .links a:hover {
   margin: 5px;
   padding: 10px;
-  font-size: 30px;
+  font-size: 24px;
   color:rgb(245, 3, 3);
-  text-shadow: 3px 3px 3px rgb(71, 69, 78);
+  text-shadow: 3px 3px 3px rgb(47, 46, 49);
   }
 
   .col3{
