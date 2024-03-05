@@ -64,6 +64,16 @@
     
     <div class="side-bar-left">
         <div id="sticky-menu-left" class="sticky-menu hide">
+            <iframe      
+            class="responsive"  
+            style="width: 100%;margin-top: 5px;"          
+            src="https://youtube.com/embed/YZqikxpsYcI?autoplay=0">
+            </iframe>
+            <p class="video-text"
+            style="margin-top:4px;" >
+                <b>Piano improvisation #316</b>
+                <br><br>                
+            </p>
         </div>
     </div>  
 
@@ -399,7 +409,8 @@
 window.onscroll = function() {sticky_js()};
 
 function sticky_js() {
-  if (document.documentElement.scrollTop > 850) {
+    var n = document.getElementById("page-title").offsetTop;
+  if (document.documentElement.scrollTop > n) {
     document.getElementById("sticky-menu-left").className="sticky-menu show"
     document.getElementById("sticky-menu-right").className="sticky-menu show"
   } 

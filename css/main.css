@@ -28,7 +28,7 @@ h3{
 }
 
 p{
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
     color: rgb(50,1, 100);
     padding-right: 5px;
@@ -124,7 +124,7 @@ header{
 .sticky-menu{
   position: fixed;
   top: 0;
-  width: 100%;  
+  width: 14%;  
   opacity: 0.8;
   }
 
@@ -147,10 +147,9 @@ header{
   transition-duration: 1s;
 }
 
-#sticky-menu-left a {
-  text-decoration: none;
-  transition-property: all;
-  transition-duration: 1s;
+#sticky-menu-left {
+  display: block;
+  float: left;
 }
 
   .space1{
@@ -272,7 +271,8 @@ header{
   .media-right img {
     padding: 25px;
     padding-right: 0;
-    width: cover ;
+    width: 100% ;
+    height: auto;
 }
 
 .pad-right{
