@@ -28,7 +28,7 @@ h3{
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     color: rgb(50,1, 100);
     padding-right: 5px;
@@ -175,10 +175,10 @@ header{
 
 @media screen and (min-width: 600px) {
   
-.page-grid-container {
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-  }
+  .page-grid-container {
+      display: grid;
+      grid-template-columns: 15% 70% 15%;
+    }
 }
 
   .main{
@@ -189,7 +189,6 @@ header{
   }
 
   .index{
-    background-color: rgb(235, 219, 246);
     padding: 10px;
   }
   .index ul{
@@ -201,17 +200,17 @@ header{
     font-weight: bolder;
   }
   .links a {    
-    font-size: 20px; 
+    font-size: 18px; 
     color: rgb(44, 1, 83);
     text-decoration: none; 
     transition-property: all;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
   }
 
   .links a:hover {
   margin: 5px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
   color:rgb(245, 3, 3);
   text-shadow: 3px 3px 3px rgb(47, 46, 49);
   }

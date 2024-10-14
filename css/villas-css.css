@@ -1,0 +1,13 @@
+#header, h4 {
+    text-align: center;
+    color: black;
+    padding: 25px;
+}
+
+.photo {
+    border: solid 1px black;
+}
+
+a {
+    text-decoration-line: none;
+}
