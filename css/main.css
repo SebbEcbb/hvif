@@ -64,13 +64,12 @@ header{
     margin-block-end: 5px;
     text-decoration: none;
     transition-property: all;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
 }
 
 #site-title a:hover{
     padding: 5px;
     padding-right: 20px !important;
-
     font-size: 38px;  
 }
 

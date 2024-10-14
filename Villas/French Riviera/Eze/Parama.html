@@ -22,25 +22,55 @@
 </head>
 
 <body>
+    <header>
+        <div>        
+            <h4 style="padding: 10px" itemprop="headline">
+                <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas <br> in France</a></strong>
+            </h4>  
+        </div>
+    </header>
+
     <div id="header">
-    <h1>Villa Pamara</h1> <br>
-    <p class="links"><a href="https://www.google.com/maps/place/06360+%C3%88ze/@43.7279276,7.3329358,11.25z/data=!4m6!3m5!1s0x12cdc36149af4541:0x40819a5fd979c40!8m2!3d43.7278189!4d7.361792!16zL20vMDkybXl0?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">French Riviera - Eze</a></p>
+        <h1><a href='./Parama-details.html' target="_blank">Villa Pamara</a></h1>
+        <h4><a href="https://www.google.com/maps/place/06360+%C3%88ze/@43.7279276,7.3329358,12z/data=!4m6!3m5!1s0x12cdc36149af4541:0x40819a5fd979c40!8m2!3d43.7278189!4d7.361792!16zL20vMDkybXl0?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">French Riviera:  Èze</a></h4>
     </div>
     
-    <div class="photo"><img src="https://cdn.villanovo.com/5547-eze-villa-pamara-swimming-pool-1536021776649c496a1614a9.59695283-1018445544649c496a161726.14754501/1" width="100%" height="auto" alt="Villa Parama Eze"></div>
-    <h4 class="links"><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-pamara?acode=aUfhoCvT' target="_blank">Details</h4>
+    <div id="fixed" class="hide">
+        <h4><a href='./Parama-details.html' target="_blank">Details</h4>
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5547-eze-villa-pamara-view-of-the-house-2798859846537d58dbdac90.11631859-7315540556537d58dbdafa4.93153985/1" width="100%" height="auto" alt="Villa Parama Eze"></div>
-    <h4 class="links"><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-pamara?acode=aUfhoCvT' target="_blank">Details</h4>
+    <div id="top" class="hide">
+        <h4 ><a href='#'">Top</h4>
+    </div>
     
-    <div class="photo"><img src="https://cdn.villanovo.com/5547-eze-villa-pamara-lunch-at-the-house-844696516537d58fca6f08.53798924-452475616537d58fca72a2.41028433/1" width="100%" height="auto" alt="Villa Parama Eze"></div>
-    <h4 class="links"><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-pamara?acode=aUfhoCvT' target="_blank">Details</h4>
+    <div class="photo"><img src="../Eze/Pamara1.avif" width="100%" height="auto" alt="Villa Parama Eze"></div>
+    
+    <div class="photo"><img src="../Eze/Pamara2.avif" width="100%" height="auto" alt="Villa Parama Eze"></div>
+    
+    <div class="photo"><img src="../Eze/Pamara3.avif" width="100%" height="auto" alt="Villa Parama Eze"></div>
         
-    <div class="photo"><img src="https://www.villanovo.com/photos/5547/cote-dazur-villa-pamara-1098167537602f9f99443709.23580515.jpg" width="100%" height="auto" alt="Villa Parama Eze"></div>
-    <h4 class="links"><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-pamara?acode=aUfhoCvT' target="_blank">Details</h4>
-            
-    <div class="photo"><img src="https://www.villanovo.com/photos/5547/cote-dazur-villa-pamara-1792456001602f9f93ea1b45.67367681.jpg" width="100%" height="auto" alt="Villa Parama Eze"></div>
-    <h4 class="links"><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-pamara?acode=aUfhoCvT' target="_blank">Details</h4>
+    <div class="photo"><img src="../Eze/Pamara4.jpg" width="100%" height="auto" alt="Villa Parama Eze"></div>
+         
+    <div class="photo"><img src="../Eze/Pamara5.jpg" width="100%" height="auto" alt="Villa Parama Eze"></div>
+
+    <div style="height: 50px;"></div>
+
+    <script id="Sticky-js">
+        window.onscroll = function() {StickyJs()};    
+    
+        function StickyJs() {
+            const element = document.documentElement.getBoundingClientRect();
+            const m = -element.y
+
+            if( m < 330 ){      
+                document.getElementById("fixed").className = "hide";
+                document.getElementById("top").className = "hide";
+            } else { 
+                document.getElementById("fixed").className = "white-text-with-blue-shadow show";
+                document.getElementById("top").className = "white-text-with-blue-shadow show";
+            } 
+        }
+    </script> 
 
 </body>
 </html>

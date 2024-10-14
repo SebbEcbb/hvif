@@ -1,13 +1,56 @@
-#header, h4 {
+#header, #header a {
     text-align: center;
-    color: black;
+    color: indigo;
     padding: 25px;
+    transition-duration: 1s;
+}
+
+#header a:hover {
+    font-size: 110%;
+    margin: 5px;
+    padding: 10px;
+    text-shadow: 3px 3px 3px rgb(47, 46, 49);
 }
 
 .photo {
     border: solid 1px black;
+    margin: 5px;
+    margin-bottom: 50px;
+    
 }
+.photo img{margin: 0;}
 
 a {
     text-decoration-line: none;
 }
+
+#fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+}
+
+#top{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+}
+
+.white-text-with-blue-shadow {
+    text-shadow:
+      3px 3px 5px white,
+      0 1em 2em blue,
+      0 0 2em blue;
+    transition-duration: 1s;
+    font-size: 22px;
+  }
+
+
+  .white-text-with-blue-shadow:hover{
+
+    text-shadow: 3px 3px 3px rgb(47, 46, 49);
+    background-color: white;
+    border-radius: 10px;
+  }
