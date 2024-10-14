@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,46 +14,77 @@
   gtag('config', 'G-XZ35BGV7MD');
 </script>
 
-<link rel="icon" href="/pages/site-icon.jpg">
-<link rel="stylesheet" href="/css/main.css" >
+<script src="../../../js/villas.js"></script>
 
-<!--<meta http-equiv="refresh" content="1; url='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT'"/> -->
+<link rel="icon" href="../../../pages/site-icon.jpg">
+<link rel="stylesheet" href="../../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../../css/villas-css.css" type="text/css">
+
+
 <title>Villa Olympe Cassis</title>
 
-<style>
-    h1, h2 {
-        text-align: center;
-        color: black;
-    }
-
-    .photo {
-        border: solid 1px black;
-    }
-
-    a {
-        text-decoration-line: none;
-        color:black;
-    }
-    
-</style>
 </head>
 
 <body>
-    <h1>Villa Olympe Cassis</h1>
+    <header>
+        <div>        
+            <h4 style="padding: 10px" itemprop="headline">
+                <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas <br> in France</a></strong>
+            </h4>  
+        </div>
+    </header>
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/4846/cote-dazur-villa-olympe-140819262563eb590049beb0.92453226.jpg" width="100%" height="auto" alt="Villa Olympe Cassis"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/cassis/villa-olympe?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="header">
+        <h1><a href="" onclick="olympe_js()">Villa Olympe </a></h1>
+        <h4><a href=https://www.google.com/maps/place/13260+Cassis/@43.2267424,5.2701269,10z/data=!4m6!3m5!1s0x12c9bac66b7ee435:0x40819a5fd970430!8m2!3d43.215134!4d5.53712!16zL20vMDdiZnlf?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Cote d'Azur:  Cassis</a></h4>
+    </div>
+    
+    <div id="fixed" class="hide">
+        <h4><a href="" onclick="olympe_js()" >Details</a></h4>
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/4846-cassis-villa-olympe-view-of-the-house-1373365327649c564b1a76d2.71997471-1150633651649c564b1a7a13.40972035/1" width="100%" height="auto" alt="Villa Olympe Cassis"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/cassis/villa-olympe?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="top" class="hide">
+        <h4 ><a href='#'">Top</h4>
+    </div>
+    
+    <div class="photo">
+        <img src="../Cassis/olympe1.jpg" width="100%" height="auto" alt="Villa Olympe Cassis" onclick="olympe_js()">
+    </div>
+    
+    <div class="photo">
+        <img src="../Cassis/olympe2.avif" width="100%" height="auto" alt="Villa Olympe Cassis" onclick="olympe_js()">
+    </div>
+    
+    <div class="photo">
+        <img src="../Cassis/olympe3.avif" width="100%" height="auto" alt="Villa Olympe Cassis" onclick="olympe_js()">
+    </div>
+        
+    <div class="photo">
+        <img src="../Cassis/olympe4.jpg" width="100%" height="auto" alt="Villa Olympe Cassis" onclick="olympe_js()">
+    </div>
+         
+    <div class="photo">
+        <img src="../Cassis/olympe5.jpg" width="100%" height="auto" alt="Villa Olympe Cassis" onclick="olympe_js()">
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/4846-cassis-villa-olympe-terrace-15361498836537d54fd59740.52007187-9056415326537d54fd59bb7.69029521/1" width="100%" height="auto" alt="Villa Olympe Cassis"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/cassis/villa-olympe?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div style="height: 50px;"></div>
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/4846/cote-dazur-villa-olympe-191867558163eb58f6c41158.04030851.jpg" width="100%" height="auto" alt="Villa Olympe Cassis"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/cassis/villa-olympe?acode=aUfhoCvT' target="_blank">Details</h2>
+    <script id="Sticky-js">
+        window.onscroll = function() {StickyJs()};    
+    
+        function StickyJs() {
+            const element = document.documentElement.getBoundingClientRect();
+            const m = -element.y
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/4846/cote-dazur-villa-canaille-18598979605d70dbe2d61f91.75956288.jpg" width="100%" height="auto" alt="Villa Olympe Cassis"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/cassis/villa-olympe?acode=aUfhoCvT' target="_blank">More photos & details</h2>
-    </body>
+            if( m < 330 ){      
+                document.getElementById("fixed").className = "hide";
+                document.getElementById("top").className = "hide";
+            } else { 
+                document.getElementById("fixed").className = "white-text-with-blue-shadow show";
+                document.getElementById("top").className = "white-text-with-blue-shadow show";
+            } 
+        }
+    </script> 
+
+</body>
 </html>

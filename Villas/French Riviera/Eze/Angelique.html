@@ -4,6 +4,7 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,46 +13,79 @@
   gtag('config', 'G-XZ35BGV7MD');
 </script>
 
-<link rel="icon" href="/pages/site-icon.jpg">
-<link rel="stylesheet" href="/css/main.css" >
+<script src="../../../js/villas.js"></script>
 
-<!--<meta http-equiv="refresh" content="1; url='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT'"/> -->
+<link rel="icon" href="../../../pages/site-icon.jpg">
+<link rel="stylesheet" href="../../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../../css/villas-css.css" type="text/css">
+
+
 <title>Villa Angelique Eze</title>
 
-<style>
-    h1, h2 {
-        text-align: center;
-        color: black;
-    }
-
-    .photo {
-        border: solid 1px black;
-    }
-
-    a {
-        text-decoration-line: none;
-        color: indigo;
-    }
-    
-</style>
 </head>
 
 <body>
-    <h1>Villa Angelique Eze</h1>
+    <header>
+        <div>        
+            <h4 style="padding: 10px" itemprop="headline">
+                <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas <br> in France</a></strong>
+            </h4>  
+        </div>
+    </header>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5353-eze-villa-angelique-view-of-the-house-828230840649c4681e0e427.97541248-1791786269649c4681e0e835.41136977/1" width="100%" height="auto" alt="Villa Angelique Eze"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-angelique?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="header">
+        <h1><a href="" onclick="angelique_js()">Villa Angelique </a></h1>
+        <h4><a href="https://www.google.com/maps/place/06360+%C3%88ze/@43.7279276,7.3329358,12z/data=!4m6!3m5!1s0x12cdc36149af4541:0x40819a5fd979c40!8m2!3d43.7278189!4d7.361792!16zL20vMDkybXl0?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">French Riviera:  Èze</a></h4>
+    </div>
+    
+    <div id="fixed" class="hide">
+        <h4><a href="" onclick="angelique_js()" >Details</a></h4>
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5353-eze-villa-angelique-living-room-10515812786537cefbe6d073.05817136-2976595616537cefbe6d431.05406476/1" width="100%" height="auto" alt="Villa Angelique Eze"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-angelique?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="top" class="hide">
+        <h4 ><a href='#'">Top</h4>
+    </div>
+    
+    
+    <div class="photo">
+        <img src="../Eze/angelique1.jpg" width="100%" height="auto" alt="Villa Parama Eze" onclick="angelique_js()">
+    </div>
+    
+    <div class="photo">
+        <img src="../Eze/angelique2.jpg" width="100%" height="auto" alt="Villa Parama Eze" onclick="angelique_js()">
+    </div>
+        
+    <div class="photo">
+        <img src="../Eze/angelique3.jpg" width="100%" height="auto" alt="Villa Parama Eze" onclick="angelique_js()">
+    </div>
+         
+    <div class="photo">
+        <img src="../Eze/angelique4.jpg" width="100%" height="auto" alt="Villa Parama Eze" onclick="angelique_js()">
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5353-eze-villa-angelique-living-room-10209347966537cefe270a84.03398142-12164759136537cefe270e43.66079579/1" width="100%" height="auto" alt="Villa Angelique Eze"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-angelique?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div class="photo">
+        <img src="../Eze/angelique5.jpg" width="100%" height="auto" alt="Villa Parama Eze" onclick="angelique_js()">
+    </div>
+    
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/5353/cote-dazur-villa-angelique-20280728285ee25d40685f92.80479653.jpg" width="100%" height="auto" alt="Villa Angelique Eze"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-angelique?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div style="height: 50px;"></div>
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/5353/cote-dazur-villa-angelique-4177877665ee25d4331acc0.85927802.jpg" width="100%" height="auto" alt="Villa Angelique Eze"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/eze/villa-angelique?acode=aUfhoCvT' target="_blank">More photos & details</h2>
-    </body>
+    <script id="Sticky-js">
+        window.onscroll = function() {StickyJs()};    
+    
+        function StickyJs() {
+            const element = document.documentElement.getBoundingClientRect();
+            const m = -element.y
+
+            if( m < 330 ){      
+                document.getElementById("fixed").className = "hide";
+                document.getElementById("top").className = "hide";
+            } else { 
+                document.getElementById("fixed").className = "white-text-with-blue-shadow show";
+                document.getElementById("top").className = "white-text-with-blue-shadow show";
+            } 
+        }
+    </script> 
+
+</body>
 </html>

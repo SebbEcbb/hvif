@@ -4,6 +4,7 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,45 +13,77 @@
   gtag('config', 'G-XZ35BGV7MD');
 </script>
 
-<link rel="icon" href="/pages/site-icon.jpg">
-<link rel="stylesheet" href="/css/main.css" >
+<script src="../../../js/villas.js"></script>
 
-<!--<meta http-equiv="refresh" content="1; url='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT'"/> -->
+<link rel="icon" href="../../../pages/site-icon.jpg">
+<link rel="stylesheet" href="../../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../../css/villas-css.css" type="text/css">
+
+
 <title>Villa Canest Saint Tropez</title>
 
-<style>
-    h1, h2 {
-        text-align: center;
-        color: black;
-    }
-
-    .photo {
-        border: solid 1px black;
-    }
-
-    a {
-        text-decoration-line: none;
-    }
-    
-</style>
 </head>
 
 <body>
-    <h1>Villa Canest Saint Tropez</h1>
+    <header>
+        <div>        
+            <h4 style="padding: 10px" itemprop="headline">
+                <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas <br> in France</a></strong>
+            </h4>  
+        </div>
+    </header>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5603-saint-tropez-canest-garden-1691393163649c4984ae2de5.09614255-1845094856649c4984ae3121.11343265/1" width="100%" height="auto" alt="Canest Saint Tropez"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="header">
+        <h1><a href="" onclick="canest_js()">Villa Canest </a></h1>
+        <h4><a href="https://www.google.com/maps/place/83990+Saint-Tropez/@43.2813825,6.582421,12z/data=!4m6!3m5!1s0x12cec7148316e747:0x912a1b632d84b9df!8m2!3d43.2676808!4d6.6407109!16zL20vMDNxemt6?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">French Riviera:  Saint Tropez</a></h4>
+    </div>
+    
+    <div id="fixed" class="hide">
+        <h4><a href="" onclick="canest_js()" >Details</a></h4>
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5603-saint-tropez-canest-living-room-919233316537af680739e0.89315190-13841826356537af68073cf6.40854804/1" width="100%" height="auto" alt="Canest Saint Tropez"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div id="top" class="hide">
+        <h4 ><a href='#'">Top</h4>
+    </div>
+    
+    <div class="photo">
+        <img src="../Saint-Tropez/canest1.avif" width="100%" height="auto" alt="Villa Canest Saint Tropez" onclick="canest_js()">
+    </div>
+    
+    <div class="photo">
+        <img src="../Saint-Tropez/canest2.avif" width="100%" height="auto" alt="Villa Canest Saint Tropez" onclick="canest_js()">
+    </div>
+    
+    <div class="photo">
+        <img src="../Saint-Tropez/canest3.avif" width="100%" height="auto" alt="Villa Canest Saint Tropez" onclick="canest_js()">
+    </div>
+        
+    <div class="photo">
+        <img src="../Saint-Tropez/canest4.jpg" width="100%" height="auto" alt="Villa Canest Saint Tropez" onclick="canest_js()">
+    </div>
+         
+    <div class="photo">
+        <img src="../Saint-Tropez/canest5.jpg" width="100%" height="auto" alt="Villa Canest Saint Tropez" onclick="canest_js()">
+    </div>
 
-    <div class="photo"><img src="https://cdn.villanovo.com/5603-saint-tropez-canest-view-of-the-house-2066737786537af65acadf6.76189051-16840451776537af65acb160.91394070/1" width="100%" height="auto" alt="Canest Saint Tropez"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT' target="_blank">Details</h2>
+    <div style="height: 50px;"></div>
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/5603/cote-dazur-canest-503029206607d5c60c4f746.32098521.jpg" width="100%" height="auto" alt="Canest Saint Tropez"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT' target="_blank">Details</h2>
+    <script id="Sticky-js">
+        window.onscroll = function() {StickyJs()};    
+    
+        function StickyJs() {
+            const element = document.documentElement.getBoundingClientRect();
+            const m = -element.y
 
-    <div class="photo"><img src="https://www.villanovo.com/photos/5603/cote-dazur-canest-230570704607d5c5b911772.44914703.jpg" width="100%" height="auto" alt="Canest Saint Tropez"></div>
-    <h2><a href='https://www.villanovo.com/villa-rentals/europe/france/french-riviera/saint-tropez/canest?acode=aUfhoCvT' target="_blank">Details</h2>
-    </body>
+            if( m < 330 ){      
+                document.getElementById("fixed").className = "hide";
+                document.getElementById("top").className = "hide";
+            } else { 
+                document.getElementById("fixed").className = "white-text-with-blue-shadow show";
+                document.getElementById("top").className = "white-text-with-blue-shadow show";
+            } 
+        }
+    </script> 
+
+</body>
 </html>
