@@ -1,14 +1,11 @@
-#header, #header a {
+#header, #header h1 {
     text-align: center;
     color: indigo;
     padding: 25px;
     transition-duration: 1s;
 }
 
-#header a:hover {
-    font-size: 110%;
-    margin: 5px;
-    padding: 10px;
+#header:hover, #header h1:hover {
     text-shadow: 3px 3px 3px rgb(47, 46, 49);
 }
 
@@ -27,15 +24,16 @@ a {
 #fixed{
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
     padding: 5px;
 }
 
 #top{
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    left: 20px;
     padding: 5px;
+
 }
 
 .white-text-with-blue-shadow {
@@ -45,6 +43,8 @@ a {
       0 0 2em blue;
     transition-duration: 1s;
     font-size: 22px;
+    background-color: whitesmoke;
+    opacity: 40%;
   }
 
 
@@ -52,5 +52,6 @@ a {
 
     text-shadow: 3px 3px 3px rgb(47, 46, 49);
     background-color: white;
+    opacity: 100%;
     border-radius: 10px;
   }
