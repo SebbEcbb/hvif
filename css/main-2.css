@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    color:darkblue;
+    font-weight: bold;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    color:rgb(40, 1, 83);
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 400;  
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    padding-right: 5px;
+}
+
+img {
+    margin: 0;
+  }
+
+header{      
+    height: 35px;
+    width: 100%;
+}
+
+#page_container{
+  padding: 2px;
+  display: block;
+  /*background-color: whitesmoke;*/
+}
+
+#site-title{   
+    font-weight: bold;    
+    text-shadow: 3px 3px 5px rgb(72, 65, 94,0.8); 
+}
+
+#site-title a {
+    font-family: "Ubuntu", sans-serif;
+    color:darkblue;
+    opacity: 0.75;
+    margin-block-end: 5px;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+
+#toc h3{
+  text-decoration: underline;
+}
+
+.links {padding-bottom: 10px;}
+
+#menu a{
+  font-weight:lighter;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+
+
+#menu-right {
+  float:right !important;
+  text-align: right;
+}
+
+
+#menu ul li {
+    list-style-type:none;
+    display: inline;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+.hide{
+  display:none;
+}
+
+.show{
+  display:block;
+}
+
+.sticky-header{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  top: 0;
+  font-size: 18px !important;
+  }
+
+  .sticky-header div {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .space1{
+    height: 20px;
+}
+
+  .space2{
+    height: 50px;
+}
+
+  .space3{
+    height: 100px;
+}
+
+  .space4{
+    height: 400px;
+}
+
+.boxed{
+  border: solid 1px black;
+}
+
+
+  .main{
+    padding-right: 10px;
+  }
+  .main h1{
+    text-align: left;
+  }
+
+  .index{
+    padding: 10px;
+  }
+  .index ul{
+    list-style: none;
+  }
+
+  .index h3 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /*10 columns*/
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-1 {width: 10%;}
+  .col-2 {width: 20%;}
+  .col-3 {width: 30%;}
+  .col-4 {width: 40%;}
+  .col-5 {width: 50%;}
+  .col-6 {width: 60%;}
+  .col-7 {width: 70%;}
+  .col-8 {width: 80%;}
+  .col-9 {width: 90%;}
+  .col-10 {width: 100%;}
+
+@media screen and (max-width: 599px) {
+
+  h1{font-size: 30px;}
+  h2{font-size: 24px;}
+  h3{font-size: 20px;}
+  p{font-size: 16px;}
+
+  #site-title a {font-size: 16px;}
+  #menu{display: none;}
+
+  #mob_menu{
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+
+  #mob_overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:whitesmoke;
+    z-index: 2;
+  }
+  
+  #mob_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    list-style: none;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  #close_button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: bisque;
+    border: solid 1px black;
+    cursor: pointer;
+  }
+  .links a {font-size: 14px; color: blue;}
+  #footer{}
+}
+
+@media screen and (min-width: 600px) {
+
+  h1{font-size: 36px;}
+  h2{font-size: 30px;}
+  h3{font-size: 26px;}
+  p{font-size: 18px;}
+
+  #site-title a {font-size: 22px;}
+  #site-title a:hover {
+    padding: 5px;
+    font-size: 24px;  
+    color: darkred;
+    opacity: 0.75;
+  }
+  #menu a{font-size: 18px;}
+  #menu a:hover {margin: 5px;padding: 8px;font-size: 20px;}
+
+  #menu-right {padding-right: 15px;}
+  #menu-right li a{margin-left: 10px;}
+
+  
+  .links a {    
+    font-size: 18px; 
+    color: blue;
+    text-decoration: none; 
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
+  .links a:hover {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  color:rgb(245, 3, 3);
+  text-shadow: 3px 3px 3px rgb(47, 46, 49);
+  }
+
+  #mob_menu,#mob_text {display: none;}
+}

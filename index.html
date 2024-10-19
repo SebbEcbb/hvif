@@ -45,20 +45,10 @@
 
 <div id="page-hero"><img src="./pages/Home/hero.jpg" alt="hero" class="responsive"></div>
 
-<div id="main-menu">
-    
-    <ul id="main-menu-left">
-        <li class="links"><a href="#toc">Content</a></li>
-    </ul>
 
-    <ul id="main-menu-right">       
-        <li class="links"> <a href="./pages/Tourism in France _ Holiday Villas In France.html">France</a> </li>
-        <li class="links"> <a href="./Villas/index.html" target="_blank">Villas</a> </li>                 
-        <li class="links"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
-    </ul>
-</div> 
 
 <div class="space2"></div> 
+
 
 <div class="page-grid-container">
     
@@ -392,21 +382,22 @@
     </div>
 </div>
 
-<script id="Function_sticky-menu">
-window.onscroll = function() {sticky_js()};
+<script id="Sticky-js">
+    window.onscroll = function() {StickyJs()};    
 
-function sticky_js() {
-    var n = document.getElementById("page-title").offsetTop;
-  if (document.documentElement.scrollTop > n) {
-    document.getElementById("sticky-menu-left").className="sticky-menu show"
-    document.getElementById("sticky-menu-right").className="sticky-menu show"
-  } 
-  else {
-    document.getElementById("sticky-menu-left").className="sticky-menu hide"
-    document.getElementById("sticky-menu-right").className="sticky-menu hide"
-  }
-}
-</script>
+    function StickyJs() {
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+
+        if( m < 330 ){      
+            document.getElementById("fixed").className = "hide";
+            document.getElementById("top").className = "hide";
+        } else { 
+            document.getElementById("fixed").className = "white-text-with-blue-shadow show";
+            document.getElementById("top").className = "white-text-with-blue-shadow show";
+        } 
+    }
+</script> 
 
 </body>
 </html>

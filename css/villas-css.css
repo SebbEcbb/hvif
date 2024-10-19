@@ -26,15 +26,15 @@ a {
     bottom: 10px;
     right: 20px;
     padding: 5px;
-}
-
-#top{
+  }
+  
+  #top{
     position: fixed;
     bottom: 10px;
     left: 20px;
     padding: 5px;
-
-}
+  
+  }
 
 .white-text-with-blue-shadow {
     text-shadow:

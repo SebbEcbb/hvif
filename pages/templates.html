@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ35BGV7MD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XZ35BGV7MD');
+    </script>
+
+
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/main-2.css">
+
+    
+    
+    
+    
+    
+    <title>Templates</title>
+
+</head>
+
+<body>
+
+    <div id="mob_overlay">
+        <div id="close_button" onclick = "menu_off()"></div>
+        <ul id="mob_text">    
+            <li class=""><a href="#toc" onclick = "menu_off()">Content</a></li>   
+            <li class=""> <a href="./pages/Tourism in France _ Holiday Villas In France.html" onclick = "menu_off()">France</a> </li>
+            <li class=""> <a href="./Villas/index.html" target="_blank" onclick = "menu_off()">Villas</a> </li>                 
+            <li class=""> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank" onclick = "menu_off()">Contact</a> </li>                   
+        </ul>
+    </div>
+
+<div id="page_container">
+    <header>
+        <div id="header" class="row" itemprop="headline">
+            <div class="col-4">
+                <p id="site-title">
+                    <strong><a href="https://holidayvillasinfrance.com/" rel="home">Holiday Villas in France</a></strong>
+                </p> 
+            </div> 
+            <div class="col-6">
+                <div id="menu">    
+    
+                    <ul id="menu-right">    
+                        <li class="links"><a href="#toc">Content</a></li>   
+                        <li class="links"> <a href="./pages/Tourism in France _ Holiday Villas In France.html">France</a> </li>
+                        <li class="links"> <a href="./Villas/index.html" target="_blank">Villas</a> </li>                 
+                        <li class="links"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
+                    </ul>
+                </div> 
+                <div id="mob_menu" onclick="menu_on()">
+                    <img src="../images/menu-icon.png" width=25% alt="menu">
+                </div>
+            </div> 
+ 
+        </div>
+    </header>
+    <div id="page-hero"><img src="./Home/hero.jpg" alt="hero" class="responsive"></div>
+
+
+
+    
+    <!-- Template for columns. 
+    col-1 to col- 10 : sum must be 10 to fill entire row -->
+    
+    <div class="row">
+        <div class="col-2"></div> <!-- end col-2 -->
+
+        <div class="col-8">
+            <div class="space1"></div>  
+            <div id="page-title">
+                <h1 ><strong>Page Title</strong></h1>
+            </div>
+            <div class="space2"></div>           
+            <div id="toc" class="index">
+                <h3 >Table of Content</h3>
+                <ul>
+                    <li class="links"><a href="#par1">Paragraphe 1</a></li>
+                    <li class="links"><a href="#par2">Paragraphe 2</a></li>
+                    <li class="links"><a href="#par3">Paragraphe 3</a></li>
+                    <li class="links"><a href="#par4">Paragraphe 4</a></li>
+                    <li class="links"><a href="#par5">Paragraphe 5</a></li>
+                    <li class="links"><a href="#par6">Paragraphe 6</a></li>
+                    <li class="links"><a href="#par7">Paragraphe 7</a></li>
+                    <li class="links"><a href="#par8">Paragraphe 8</a></li>
+                </ul>
+            </div>
+        </div> <!-- end col-8 -->
+    </div>
+
+    <p>hello</p>
+
+</div> <!-- end page_container-->   
+
+<script>
+    window.onscroll = function() {StickyJs()};    
+
+    function StickyJs() {
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+
+        if( m > 720 ){      
+            document.getElementById("header").className = "row sticky-header";
+            //document.getElementById("top").className = "hide";//
+        } else { 
+            document.getElementById("header").className = "row";
+            //document.getElementById("top").className = "white-text-with-blue-shadow show";//
+        } 
+    }
+
+    function menu_on() {
+    document.getElementById("mob_menu").style.display = "none";
+    document.getElementById("mob_overlay").style.display = "block";
+    document.getElementById("page_container").style.opacity = "0.3";
+
+    }
+
+    function menu_off() {
+    document.getElementById("mob_menu").style.display = "block";
+    document.getElementById("mob_overlay").style.display = "none";
+    document.getElementById("page_container").style.opacity = "1";
+    }
+</script>     
+
+</body>
+</html>
