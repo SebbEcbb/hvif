@@ -48,7 +48,6 @@ header{
 #page_container{
   padding: 2px;
   display: block;
-  /*background-color: whitesmoke;*/
 }
 
 #site-title{   
@@ -67,7 +66,6 @@ header{
     transition-duration: 0.5s;
 }
 
-
 #toc h3{
   text-decoration: underline;
 }
@@ -81,13 +79,10 @@ header{
   transition-duration: 0.5s;
 }
 
-
-
 #menu-right {
   float:right !important;
   text-align: right;
 }
-
 
 #menu ul li {
     list-style-type:none;
@@ -97,6 +92,7 @@ header{
 .row {
   margin-bottom: 50px;
 }
+
 .row::after {
   content: "";
   clear: both;
@@ -113,6 +109,7 @@ header{
   height: 100%;
   overflow: hidden;
 }
+
 .hide{
   display:none;
 }
@@ -120,6 +117,22 @@ header{
 .show{
   display:block;
 }
+
+/*
+#header{
+  width: 99%;
+  height: 30px;
+  padding-bottom: 15px;
+  transition-duration: 0.5s;
+  }
+
+  #header:hover{
+    height: 60px;
+    margin: 5px;
+    padding: 5px;
+    background-color:white;
+    border : solid 4px darkblue;  
+  }*/
 
 .sticky-header{
   position: fixed;
@@ -217,7 +230,7 @@ header{
   .col-9 {width: 90%;}
   .col-10 {width: 100%;}
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 649px) {
 
   h1{font-size: 30px;}
   h2{font-size: 24px;}
@@ -275,46 +288,46 @@ header{
   #footer{}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 
-  h1{font-size: 32px;}
-  h2{font-size: 28px;}
-  h3{font-size: 26px;}
-  p{font-size: 18px;}
+      h1{font-size: 32px;}
+      h2{font-size: 28px;}
+      h3{font-size: 26px;}
+      p{font-size: 18px;}
 
-  #site-title a {
-    font-size: 22px;
-    padding: 0;
-  }
-  #site-title a:hover {
-    padding: 5px;
-    font-size: 24px;  
-    color: darkred;
-    opacity: 0.75;
-  }
-  #menu a{font-size: 18px;}
-  #menu a:hover {margin: 5px;padding: 8px;font-size: 20px;}
+      #site-title a {
+        font-size: 22px;
+        padding: 0;
+      }
+      #site-title a:hover {
+        padding: 5px;
+        font-size: 24px;  
+        color: darkred;
+        opacity: 0.75;
+      }
 
-  #menu-right {padding-right: 15px;}
-  #menu-right li a{margin-left: 10px;}
+      #menu a{font-size: 18px;}
+      #menu a:hover {margin: 5px;padding: 8px;font-size: 20px;}
+      #menu-right {padding-right: 15px;}
+      #menu-right li a{margin-left: 10px;}
 
   
-  .links a {    
-    font-size: 18px; 
-    color: blue;
-    text-decoration: none; 
-    transition-property: all;
-    transition-duration: 0.5s;
-  }
+      .links a {    
+        font-size: 18px; 
+        color: blue;
+        text-decoration: none; 
+        transition-property: all;
+        transition-duration: 0.5s;
+      }
 
-  .links a:hover {
-  margin: 5px;
-  padding: 10px;
-  font-size: 20px;
-  color:rgb(245, 3, 3);
-  text-shadow: 3px 3px 3px rgb(47, 46, 49);
-  }
+      .links a:hover {
+      margin: 5px;
+      padding: 10px;
+      font-size: 20px;
+      color:rgb(245, 3, 3);
+      text-shadow: 3px 3px 3px rgb(47, 46, 49);
+      }
 
-  #mob_menu {display: none;}
-  #mob_text {display: none;}
+    #mob_menu {display: none;}
+    #mob_text {display: none;}
 }
