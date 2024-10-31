@@ -31,7 +31,7 @@ p{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     color: black;
-    padding: 10px;
+    padding: 5px;
     text-align: justify;
 }
 
@@ -46,7 +46,7 @@ header{
 
 
 #page_container{
-  padding: 2px;
+  padding-left: 15px;
   display: block;
 }
 
@@ -227,7 +227,9 @@ header{
 
   [class*="col-"] {
     float: left;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     padding: 10px;
   }
@@ -277,6 +279,7 @@ header{
     cursor: pointer;
   }
   .links a {font-size: 14px; color: blue;}
+  .row {margin-bottom: 20px;}
 
 } /*end media max-width 755px*/
 
