@@ -80,7 +80,7 @@ header{
 }
 
 #menu-right {
-  float:right !important;
+  /*float:right;*/
   text-align: right;
 }
 
@@ -107,7 +107,6 @@ header{
 .responsiveH{
   width: auto;
   height: 100%;
-  overflow: hidden;
 }
 
 .hide{
@@ -118,22 +117,6 @@ header{
   display:block;
 }
 
-/*
-#header{
-  width: 99%;
-  height: 30px;
-  padding-bottom: 15px;
-  transition-duration: 0.5s;
-  }
-
-  #header:hover{
-    height: 60px;
-    margin: 5px;
-    padding: 5px;
-    background-color:white;
-    border : solid 4px darkblue;  
-  }*/
-
 .sticky-header{
   position: fixed;
   width: 99%;
@@ -143,8 +126,10 @@ header{
   padding-bottom: 25px;
   transition-duration: 0.5s;
   opacity: 0.70;
-
   }
+
+  .sticky-header menu-right {display: block;}
+
   .sticky-header:hover{
     height: 65px;
     margin: 5px;
@@ -240,6 +225,13 @@ header{
   #site-title a {font-size: 16px;}
   #menu{display: none;}
 
+  [class*="col-"] {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
   #mob_menu{
     display: block;
     position: fixed;
@@ -286,7 +278,7 @@ header{
   }
   .links a {font-size: 14px; color: blue;}
   #footer{}
-}
+} /*end media max-width 649px*/
 
 @media screen and (min-width: 650px) {
 
@@ -296,7 +288,7 @@ header{
       p{font-size: 18px;}
 
       #site-title a {
-        font-size: 22px;
+        font-size: 20px;
         padding: 0;
       }
       #site-title a:hover {
@@ -305,7 +297,7 @@ header{
         color: darkred;
         opacity: 0.75;
       }
-
+      
       #menu a{font-size: 18px;}
       #menu a:hover {margin: 5px;padding: 8px;font-size: 20px;}
       #menu-right {padding-right: 15px;}
@@ -330,4 +322,4 @@ header{
 
     #mob_menu {display: none;}
     #mob_text {display: none;}
-}
+} /*end media min-width 650 px
