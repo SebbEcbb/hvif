@@ -215,7 +215,7 @@ header{
   .col-9 {width: 90%;}
   .col-10 {width: 100%;}
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 755px) {
 
   h1{font-size: 30px;}
   h2{font-size: 24px;}
@@ -278,9 +278,9 @@ header{
   }
   .links a {font-size: 14px; color: blue;}
 
-} /*end media max-width 649px*/
+} /*end media max-width 755px*/
 
-@media screen and (min-width: 757px) {
+@media screen and (min-width: 756px) {
 
       h1{font-size: 32px;}
       h2{font-size: 28px;}
