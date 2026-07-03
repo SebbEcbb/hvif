@@ -39,12 +39,14 @@
     <!--Mobile menu hidden-->
 <div id="mob_overlay">
     <div id="close_button" onclick = "menu_off()"></div>
-    <ul id="mob_text">    
-        <li class=""><a href="#toc" onclick = "menu_off()">Content</a></li>   
-        <li class=""> <a href="../Home/About-France.html" onclick = "menu_off()">France</a> </li>
-        <li class=""> <a href="./Villas/index.html" target="_blank" onclick = "menu_off()">Villas</a> </li>                 
-        <li class=""> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank" onclick = "menu_off()">Contact</a> </li>                   
-    </ul>
+    <nav>
+        <ul id="mob_text">    
+            <li class=""><a href="#toc" onclick = "menu_off()">Content</a></li>   
+            <li class=""> <a href="../Home/About-France.html" onclick = "menu_off()">France</a> </li>
+            <li class=""> <a href="./Villas/index.html" target="_blank" onclick = "menu_off()">Villas</a> </li>                 
+            <li class=""> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank" onclick = "menu_off()">Contact</a> </li>                   
+        </ul>
+    </nav>
 </div>
 
 <div id="page_container">
@@ -68,20 +70,15 @@
                     <img src="../../images/menu-icon.png" width=25% alt="menu">
                 </div>
             </div> 
- 
         </div>
     </header>
+    
     <div id="page-hero"><img src="../Home/hero.jpg" alt="hero" class="responsive"></div>
 
-
-
-    
-    <!-- Template for columns. 
-    col-1 to col- 10 : sum must be 10 to fill entire row -->
     
     <div id="row1"class="row">
 
-        <div class="col-2"></div> <!-- end col-2 -->
+        <div class="col-1"></div> <!-- end col-1 -->
 
         <div  id="toc" class="col-8">
             <div class="space1"></div>  
@@ -108,7 +105,7 @@
 
     <div id="row2" class="row"><!--row2 -->
         <div class="space2"></div>
-        <div class="col-2"></div><!--col 1-->
+        <div class="col-1"></div><!--col 1-->
         <div id="media1" class="col-4"> <!--col 2-->
             <h2 >The Beauty of France</h2>
             <p> You might never have discovered the best of France.
@@ -141,12 +138,12 @@
             </div>
         </div> <!--end col 3-->
         
-        <div class="col-2"></div> <!--col 4-->
+        <div class="col-1"></div> <!--col 4-->
 
     </div> <!--end row2 -->
 
     <div id="row3"class="row"> <!--row3 -->
-        <div class="col-2"></div><!--col 1-->
+        <div class="col-1"></div><!--col 1-->
         <div class="col-6"> <!--col 2-->
             <h2>Opposing Forces</h2>
             <p> 
@@ -183,12 +180,12 @@
             <div class="space2"></div>
             <img src="../Home/chateau-loire.jpg" alt="Castel and Lavender" class="responsive" >
         </div><!--end col 2-->
-        <div class="col-2"></div> <!--col 3-->
+        <div class="col-1"></div> <!--col 3-->
     </div> <!--end row3-->
 
 
     <div id="row4" class="row"><!--row4-->
-        <div class="col-2"></div><!--col 1-->
+        <div class="col-1"></div><!--col 1-->
         <div class="col-6"> <!--col 2-->
 
             <div class="space2"></div>
@@ -218,20 +215,21 @@
             <img src="../Home/Lac-1-1536x470.jpg" alt="Lac", width="100%">
 
         </div><!--end col 2-->
-        <div class="col-2"></div> <!--col 3-->
+        <div class="col-1"></div> <!--col 3-->
     </div><!--end row4-->
     
 
 
     <div id="row5" class="row"><!--row 5-->
         <div class="space2"></div>
-        <div class="col-2"></div>
+        <div class="col-1"></div>
         <div class="col-3 img_wrapper"><!--col 2-->
             <div class="box">
                 <img 
                 id="img2" 
                 src="../Home/market.webp" 
-                alt="Artisans">
+                alt="Market in France"
+                class="responsive">
             </div>
         </div><!--end col 2-->
         <div id="media2" class="col-3"> <!--col 3-->
@@ -257,7 +255,7 @@
 
     <div id="row6" class="row"><!--row6-->
         <div class="space2"></div>
-        <div class="col-2"></div><!--col 1-->
+        <div class="col-1"></div><!--col 1-->
         <div id="media3" class="col-3"><!--col 2-->
 
             <p>
@@ -291,7 +289,7 @@
     </div><!--end row6-->
 
   <div id="row7" class="row"><!--row7-->
-        <div class="col-2"></div><!--col 1-->
+        <div class="col-1"></div><!--col 1-->
         <div class="col-6 img_wrapper">
             <div class="box">
             <img 
@@ -300,11 +298,11 @@
             </div>
         </div>
 
-        <div class="col-2"></div>
+        <div class="col-1"></div>
 </div><!--end row7-->
 
 <div id="row8" class="row">
-    <div class="col-2"></div>
+    <div class="col-1"></div>
     <div class="col-6">
         <h4>Montmartre, Paris</h4>
     </div>
@@ -375,7 +373,7 @@
 </div><!--end row 10-->
 
 <div id="row11" class="row"><!--row 11-->
-    <div class="col-2"></div>               
+    <div class="col-1"></div>               
     <div class="col-3" img_wrapper>
         <div class="box">
             <img 
@@ -407,7 +405,7 @@
             passing on of knowledge and experience. It takes observation. It takes examples, generation after generation.
         </p>
     </div>  
-    <div class="col-2"></div>           
+    <div class="col-1"></div>           
 </div>  <!--end row 11-->
 
 <div id="row12" class="row"><!--row 12-->
@@ -448,7 +446,7 @@
 </div>  <!--end row 13-->
 
 <div id="row14" class="row"><!--row 14-->
-    <div class="col-2"></div>               
+    <div class="col-1"></div>               
     <div id="media6" class="col-3">
         <p>
             Appearantly, dispute and complaint seem omnipresent outwardly. <br>
@@ -477,12 +475,12 @@
         </div>
     </div> <!--end col 3-->
         
-    <div class="col-2"></div>  
+    <div class="col-1"></div>  
     </div>            
 </div>  <!--end row 14-->
 
 <div id="row15" class="row"><!--row 15-->
-    <div class="col-2"></div>               
+    <div class="col-1"></div>               
     <div class="col-6">
         <div class="space2"></div>
         <h2>Loosing Flavor</h2>
@@ -495,11 +493,11 @@
         </p>
     </div>
         
-    <div class="col-2"></div>  
+    <div class="col-1"></div>  
     </div>            
 </div>  <!--end row 15-->
 <div id="row16" class="row"><!--row 16-->
-    <div class="col-2"></div>               
+    <div class="col-1"></div>               
     <div class="col-3 img_wrapper">
         <div class="box">
         <img src="../Home/Globalization1.jpg" alt="Globalisation 1">
@@ -510,13 +508,13 @@
         <img src="../Home/Globalization2.jpg" alt="Globalisation 2">
         </div>
     </div>        
-    <div class="col-2"></div>  
+    <div class="col-1"></div>  
     </div>            
 </div>  <!--end row 16-->
 
 
 <div id="row17" class="row"><!--row 17-->
-    <div class="col-2"></div>               
+    <div class="col-1"></div>               
     <div class="col-6">
         <p>
             We can find Chinese and Indian restaurants all over Europe
@@ -554,7 +552,7 @@
             December 2020
         </p>    
     </div> 
-    <div class="col-2"></div>           
+    <div class="col-1"></div>           
 </div>  <!--end row 17-->
 </div> <!-- end page_container-->   
 
