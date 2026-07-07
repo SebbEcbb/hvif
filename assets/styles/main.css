@@ -1,0 +1,292 @@
+/*Root*/
+:root{
+    --txt-col: #333;
+    --logo-col:rgb(1, 1, 180);
+    --links-col: rgb(70, 10, 110);
+    --links-hover: red;  
+
+    --bg-col-1: whitesmoke;
+    --bg-col-2: rgb(252, 245, 236);
+    
+    --shdw-1:2px 2px 2px rgba(21, 5, 140, 0.3);
+    --shdw-2:5px 6px 8px rgba(66, 1, 1, 0.6);
+}
+
+/* Globals*/ 
+
+/*Reset */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--bg-col-1);
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--links-col);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-shadow: var(--shdw-1);    
+}
+
+a:hover{
+    color: var(--links-hover);
+    text-shadow: var(--shdw-2);
+}
+
+p {
+    color: var(--txt-col);
+}
+
+.s100{height: 100px;}
+.s200{height: 200px;}
+
+.hide{  
+    display: none !important;
+}
+.show {
+    display: flex !important;
+}
+
+/* Navbar styles */
+
+.navbar { 
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background: var(--bg-col-1); 
+  width: auto;
+  margin: 5px;
+  box-shadow: 0 2px 5px, var(--shdw-2);
+}
+
+
+
+.logo {
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    color: rgb(50, 50, 50);
+    padding-left: 25px;
+    text-shadow:blueviolet 15px;
+    a {
+        font-size: x-large;
+        color: var(--logo-col) !important;
+        text-decoration: none;
+    }
+    .sub-title{
+        padding-left: 120px;
+        margin-bottom: 15px;
+        text-shadow: var(--shdw-1); 
+    }
+
+}
+
+/* The Menu Toggle (Hamburger) */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 3px;
+}
+
+/* The Links - Mobile First (Hidden by default) */
+.nav-links {
+    display: none; /* Logic: JS will swap this */
+    font-weight: 500;
+}
+
+/* Active State (Triggered by JS) */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Pulls it out of the logo's way ⚓ */
+    top: 0;
+    right: 0;
+    width: 80vw;    /* Takes 80% of screen width */
+    height: 100vh;  /* Full height */
+    background: whitesmoke;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.nav-links li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-col-1);
+}
+
+/* Hero-image*/
+.hero-image{
+    background-image: url("/assets/images/optimized/ui/hero-1024.webp");
+    width: auto;
+    height: 600px;
+    margin-bottom: 5px;
+}
+
+/* Breadcrumbs */
+#breadcrumb-container{
+    height: 35px;
+}
+
+.breadcrumbs{
+    font-size: 10px;
+    transition: all 2s;
+}
+
+/* Footer*/   
+.footer { 
+    background: antiquewhite; 
+    max-height: 100px;
+    padding-top: 25px !important;
+    border-top: solid 1px rgb(83, 74, 74);
+    text-align: center; 
+    margin-top: 50px; 
+    transition: all 0.3s ease;
+}
+
+.footer-link { 
+    display: inline-flex; 
+    align-items:center; 
+    gap: 5px; 
+    margin: 0 25px;
+}
+
+/* 1. Mobile Styles (Default for 450px) */
+.article-container {
+  display: block; /* Stacks everything vertically by default */
+  padding: 0 20px;
+}
+
+.article-header h1{
+    margin-bottom: 15px;
+}
+
+/*.article-toc{
+    margin-left: 25px;
+}*/
+
+.article-toc h3{
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.article-toc li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.toc-links a:hover{padding-left: 10px;}
+
+.navbar, .article-header, .content-block, .triple-box-row, .footer {
+  margin-bottom: 30px;
+}
+
+.meta-data{
+    font-size: smaller;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.triple-box-row {
+  display: flex;
+  flex-direction: column; /* Stacks the 3 boxes vertically */
+  gap: 15px;
+}
+
+.content-block{
+    padding-top: 20px;
+    border-top: 2px indigo solid;
+    text-shadow: var(--shdw-1);
+}
+
+.content-block h2{
+    margin-bottom: 30px;
+}
+
+/* ********************************************
+    2. Desktop Styles (For 1024px and 1920px) 
+**********************************************/
+
+@media (min-width: 1024px) {
+    .navbar {
+        display: flex;
+        align-items:center; 
+        padding-top: 15px;
+    }
+
+    .nav-links{
+        display: flex;
+        justify-content: end;
+        margin-right: 35px;
+        gap: 20px;
+        list-style: none;
+        transition: all 0.3s;
+    }
+    
+    .menu-toggle{
+        display: none;
+    }
+
+    .breadcrumbs{
+        font-size: 18px;
+    }
+
+    .article-container {
+        display: grid;
+        grid-template-columns: minmax(20px, 1fr) minmax(auto, 450px) minmax(auto, 450px) minmax(20px, 1fr);
+        gap: 40px;
+    }
+
+    /* Centered Components (Lines 2 to 4) */
+    .navbar, .breadcrumbs, .article-header, .article-toc, .content-block, .triple-box-row, .footer, .full-width-media {
+        grid-column: 2 / 4;
+        transition: all 0.3s;
+    }
+
+    /* Full-Width Component (Lines 1 to 5) */
+    .hero-image {
+        grid-column: 1 / 5;
+        width: 100%;
+    }
+
+    /* Force standard elements to sit strictly in the center (Lines 2 to 4) */
+    .article-header, .content-block, .triple-box-row {
+        grid-column: 2 / 4;
+    }
+
+    .triple-box-row {
+        flex-direction: row; /* Flips the 3 boxes back to side-by-side */
+        justify-content: space-between;
+    }
+}
+
+/*Full width elements*/
+.full-width-media, .footer, .space{
+    grid-column: 1 / 5;
+    width: 100vw;
+}

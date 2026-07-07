@@ -34,7 +34,7 @@
 
 </head>
 
-<body onload="responsiveJS()">
+<body>
 
     <!--Mobile menu hidden-->
 <div id="mob_overlay">
@@ -42,8 +42,8 @@
     <nav>
         <ul id="mob_text">    
             <li class=""><a href="#toc" onclick = "menu_off()">Content</a></li>   
-            <li class=""> <a href="../Home/About-France.html" onclick = "menu_off()">France</a> </li>
-            <li class=""> <a href="./Villas/index.html" target="_blank" onclick = "menu_off()">Villas</a> </li>                 
+            <li class=""> <a href="/" onclick = "menu_off()">France</a> </li>
+            <li class=""> <a href="/Villas/" target="_blank" onclick = "menu_off()">Villas</a> </li>                 
             <li class=""> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank" onclick = "menu_off()">Contact</a> </li>                   
         </ul>
     </nav>
@@ -60,19 +60,19 @@
             <div class="col-6">
                 <div id="menu">        
                     <ul id="menu-right">    
-                        <li class="links"><a href="#toc">Content</a></li>   
-                        <li class="links"> <a href="/pages/Home/About-France.html">France</a> </li>
+                        <li class="links"><a href="#toc">Page Content</a></li>   
+                        <li class="links"> <a href="/pages/Home/About-France.html">About France</a> </li>
                         <li class="links"> <a href="/Villas/HolidayVillasFrance.html" target="_blank">Villas</a> </li>                 
                         <li class="links"> <a href="https://www.facebook.com/HolidayVillasInFrance/" target="_blank">Contact</a> </li>                   
                     </ul>
                 </div> 
                 <div id="mob_menu" onclick="menu_on()">
-                    <img src="../../images/menu-icon.png" width=25% alt="menu">
+                    <img src="../../images/menu-icon-450.webp" width=25px alt="menu">
                 </div>
             </div> 
         </div>
     </header>
-    
+
     <div id="page-hero"><img src="../Home/hero.jpg" alt="hero" class="responsive"></div>
 
     
@@ -83,21 +83,21 @@
         <div  id="toc" class="col-8">
             <div class="space1"></div>  
             <div id="page-title">
-                <h1 ><strong>About France</strong></h1>
+                <h1><strong>Another view on France</strong></h1>
             </div>
             <div class="space2"></div>           
             <div class="index">
-                <h3 >Content</h3>
+                <h3 >Page Content</h3>
                 <ul>
-                    <li class="links"><a href="#row2">The Beauty of France</a></li>
+                    <li class="links"><a href="#row2">The Beauty</a></li>
                     <li class="links"><a href="#row3">Opposing Forces</a></li>
                     <li class="links"><a href="#row4">The Difference</a></li>
                     <li class="links"><a href="#row5">Daily life</a></li>
                     <li class="links"><a href="#row9">Art of Living</a></li>
-                    <li class="links"><a href="#row10">Life of a King</a></li>
-                    <li class="links"><a href="#row11">Culture</a></li>
-                    <li class="links"><a href="#row13">Quality</a></li>
-                    <li class="links"><a href="#row15">Flavor</a></li>
+                    <li class="links"><a href="#row10">Living like a King</a></li>
+                    <li class="links"><a href="#row11">The Culture</a></li>
+                    <li class="links"><a href="#row13">The Quality</a></li>
+                    <li class="links"><a href="#row15">Flavors</a></li>
                 </ul>
             </div>
         </div> <!-- end col-8 -->
@@ -107,10 +107,10 @@
         <div class="space2"></div>
         <div class="col-1"></div><!--col 1-->
         <div id="media1" class="col-4"> <!--col 2-->
-            <h2 >The Beauty of France</h2>
-            <p> You might never have discovered the best of France.
-                Behind a touristic and commercial hectic chaos, the country has lots of hidden beauty,
-                not only in nature but also in people and their culture.
+            <h2 >The Beauty</h2>
+            <p> You might never have discovered the best of this land.<br>
+                Behind a touristic and commercial hectic scene, the country has lots of hidden beauty in the backstage,
+                not only in nature but also in people and their daily life.
             </p>
             <p>
                 Apart from a large, beautiful variety of the natural environments, 
@@ -144,7 +144,7 @@
 
     <div id="row3"class="row"> <!--row3 -->
         <div class="col-1"></div><!--col 1-->
-        <div class="col-6"> <!--col 2-->
+        <div class="col-8"> <!--col 2-->
             <h2>Opposing Forces</h2>
             <p> 
                 Marked by a certain absence of anxiety, even in the midst of hectic chaos, 
@@ -178,7 +178,7 @@
                 the life and culture, since it is so marked by opposite forces.
             </p>  
             <div class="space2"></div>
-            <img src="../Home/chateau-loire.jpg" alt="Castel and Lavender" class="responsive" >
+            <img src="../Home/chateau-loire.jpg" alt="Castel and Lavender">
         </div><!--end col 2-->
         <div class="col-1"></div> <!--col 3-->
     </div> <!--end row3-->
@@ -212,7 +212,13 @@
                 in reaching lasting satisfaction and inner peace.
             </p>
             <div id="par2" class="space2"></div>
-            <img src="../Home/Lac-1-1536x470.jpg" alt="Lac", width="100%">
+            <img 
+                src="/images/optimized/blog/france/about-france/Lac-1-1024.webp" 
+                srcset="/images/optimized/blog/france/about-france/Lac-1-450.webp 450w,
+                        /images/optimized/blog/france/about-france/Lac-1-1024.webp 1024w,
+                        /images/optimized/blog/france/about-france/Lac-1-1920.webp 1920w"
+                sizes ="(min-width:1024px) 100vw, 100vw"
+                alt="Lacs de Frances", width="100%">
 
         </div><!--end col 2-->
         <div class="col-1"></div> <!--col 3-->
@@ -224,7 +230,7 @@
         <div class="space2"></div>
         <div class="col-1"></div>
         <div class="col-3 img_wrapper"><!--col 2-->
-            <div class="box">
+            <div class="img_box">
                 <img 
                 id="img2" 
                 src="../Home/market.webp" 
@@ -557,9 +563,7 @@
 </div> <!-- end page_container-->   
 
 <script>
-    window.onscroll = function() {StickyJs()};
-    window.onresize = function() {responsiveJS()}; 
-    
+    window.onscroll = function() {StickyJs()};   
 </script>     
 
 </body>

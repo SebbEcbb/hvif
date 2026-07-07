@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:black;
 }
 
 h1, h2, h3 {color:rgb(2,2,185);}
@@ -60,6 +59,7 @@ header{
     font-weight: bold;    
     text-shadow: 3px 3px 5px rgb(72, 65, 94,0.8); 
     padding: 0;
+    align-items: center;
 }
 
 #site-title a {
@@ -72,14 +72,72 @@ header{
     transition-duration: 0.5s;
 }
 
+#page-title{
+  text-align: center;
+}
+
+#page-title h1{
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    color: rgb(1, 1, 120);
+  }
+
 #toc h3{
   text-decoration: underline;
+  color: black;
+  font-weight:bolder;
 }
 
 .links {
   padding-bottom: 10px;
   font-weight: bold;
   font-family: poppins;
+}
+
+  #mob_menu{
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+
+  #mob_overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:whitesmoke;
+    z-index: 2;
+  }
+  
+  #mob_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: black;
+    list-style: none;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  #close_button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: bisque;
+    border: solid 1px black;
+    cursor: pointer;
+  }
+  
+#menu{
+  display: none;
 }
 
 #menu a{
@@ -108,14 +166,6 @@ header{
   display: table;
 }
 
-.responsive{
-  width: 100%;
-  height: auto;
-}
-
-.responsiveH{
-  width: auto;
-}
 
 .hide{
   display:none;
@@ -138,7 +188,11 @@ header{
   opacity: 0.70;
   }
 
-  .sticky-header menu-right {display: block;}
+
+  .sticky-header {display: flex;}
+  .sticky-header#menu-right{
+    align-items: center;
+  }
 
   .sticky-header:hover{
     height: 65px;
@@ -207,38 +261,32 @@ header{
     margin-right: auto !important;
   }
 
-  /*Image wrapper*/
-
-  .img_wrapper{
-    display: flex;
-    gap:25px
-  }
-  
-  .box img {
+  /*Images */
+.responsive{
     width: 100%;
-    height: 100%;
-    object-fit: fill;
-    padding: 0 !important;
-  }
+    height: auto;
+}
 
-  /*10 columns*/
-  [class*="col-"] {
-    float: left;
-    padding: 25px;
-  }
 
-  .col-1 {width: 10%;}
-  .col-2 {width: 20%;}
-  .col-3 {width: 30%;}
-  .col-4 {width: 40%;}
-  .col-5 {width: 50%;}
-  .col-6 {width: 60%;}
-  .col-7 {width: 70%;}
-  .col-8 {width: 80%;}
-  .col-9 {width: 90%;}
-  .col-10 {width: 100%;}
 
-@media screen and (max-width: 755px) {
+/*10 columns*/
+[class*="col-"] {
+  float:left;
+  padding: 25px;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+@media screen and (min-width: 1024px) {
 
   h1{font-size: 30px;}
   h2{font-size: 24px;}
@@ -246,67 +294,37 @@ header{
   p{font-size: 16px;}
 
   #site-title a {font-size: 16px;}
-  #menu{display: none;}
+  
+  #menu{
+    display: block;
+  }
+  #mob_menu {
+    display: none;
+  }
+  #mob_text {
+    display: none;
+  }
 
   [class*="col-"] {
     float: left;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     padding: 10px;
   }
-  
-  #mob_menu{
-    display: block;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-  }
-  #mob_menu img{
-    float: right;
-    width: 25px;
-  }
 
-  #mob_overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:whitesmoke;
-    z-index: 2;
+  .links{
+    margin-right: 15px;
   }
-  
-  #mob_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 40px;
-    list-style: none;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+  .links a {
+    font-size: 14px; 
+    color: rgb(2, 2, 185);
   }
-
-  #close_button{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    height: 25px;
-    width: 25px;
-    background-color: bisque;
-    border: solid 1px black;
-    cursor: pointer;
-  }
-  .links a {font-size: 14px; color: rgb(2, 2, 185);}
   .row {margin-bottom: 20px;}
 
-} /*end media max-width 755px*/
+} /*end media min-width 1024px*/
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 1256x) {
 
       h1{font-size: 32px;}
       h2{font-size: 28px;}
@@ -346,6 +364,5 @@ header{
       text-shadow: 3px 3px 3px rgb(47, 46, 49);
       }
 
-    #mob_menu {display: none;}
-    #mob_text {display: none;}
-} /*end media min-width 756 px
+
+} /*end media min-width 1256 px
